@@ -2,7 +2,7 @@ module Contato
     include HTTParty
     #url base de contato
     default_options.update(verify: false)
-    base_uri CONFIG['url_padrao']
+    #base_uri CONFIG['url_padrao']
     #opcoes do services
     format :json
     headers 'Content-Type': 'application/json',

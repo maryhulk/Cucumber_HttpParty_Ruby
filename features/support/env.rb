@@ -4,15 +4,15 @@ require "cucumber"
 require "capybara"
 
 
-@rspec_yml = YAML.load_file("#{Dir.pwd}/support/rspec.yml")
-@ambiente = @rspec_yml['ambiente']
-CONFIG = YAML.load_file("#{Dir.pwd}/support/data/#{@ambiente}.yml")
+#@rspec_yml = YAML.load_file("#{Dir.pwd}/support/rspec.yml")
+#@ambiente = @rspec_yml['ambiente']
+#CONFIG = YAML.load_file("#{Dir.pwd}/support/data/#{@ambiente}.yml")
 # referenciando onde está o arquivo do modulo Contato
-require_relative '../services/contatos_service.rb'
+#require_relative '../services/contatos_service.rb'
 
 RSpec.configure do |config|
   # estou colocando o modulo "Contato" como global
-  include Contato
+  #include Contato
   config.color = true
   config.formatter = :documentation
   # rspec-expectations config goes here. You can use an alternate
